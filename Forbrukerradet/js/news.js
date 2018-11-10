@@ -1,0 +1,67 @@
+(function(){
+
+    const newsListJSON = {
+        newsList: [
+            {id: 1, title: "Halvparten av barn og unge drikker energidrikk", fullTitle: "Halvparten av barn og unge i alderen 10 –18 år drikker energidrikk", imgsrc: "energidrikk-guro-edit", description: "I Forbrukerrådets nye undersøkelse svarer halvparten av barn og unge at det hender de drikker energidrikk. Nær halvparten av disse igjen sier de har opplevd bivirkninger som skjelving, hjertebank, hyperaktivitet, hodepine og brystsmerter, som følge av energidrikk.", metadata: "Publisert: 19. september 2018 av Guro Birkeland Tangen", story: "<p>Energidrikk drikkes for å holde seg våken i forbindelse med skolearbeid, men også når de er sammen med venner. Fire av ti barn mellom 10–15 år oppgir at de drikker energidrikk fordi vennene deres gjør det. Hele 16 prosent av de i alderen 10–12 år oppgir reklame som årsak til at de drikker energidrikk. Blant unge mellom 15–18 år har fire av ti prøvd å blande energidrikk med alkohol. </p><p> <blockquote>Dette viser en bekymringsfull utvikling. Energidrikk er blitt en del av kostholdet til enda flere barn og unge, sier Gunstein Instefjord, fagdirektør for handel i Forbrukerrådet.</blockquote> </p><p> Både gutter og jenter er med på trenden. Mens 54 prosent av guttene sier de drikker energidrikk, oppgir 41 prosent av jentene at de gjør det samme. Økningen i andelen som drikker energidrikk fra 2015 til 2018 er like stor for begge kjønn (13 prosentpoeng). </p><p> På under tre år har andelen barn og unge som drikker energidrikk økt betydelig, og mest blant de som er yngre enn 16 år, sammenlignet med undersøkelsen som Forbrukerrådet fikk gjennomført for tre år siden:</p> <ul><li>10–12 år: økning fra 8 prosent til 19 prosent</li><li>13–15 år: økning fra 32 prosent til 53 prosent</li><li>16–18 år: økning fra 62 prosent til 70 prosent</li></ul> <p>På grunn av skadevirkningene som denne typen leskedrikker kan ha, mener Forbrukerrådet at barn og unge bør beskyttes gjennom et forbud i salg til mindreårige.</p> <h2>Bivirkninger bekymrer</h2> <p>I Forbrukerrådets undersøkelse ble deltakerne spurt om erfaring med 11 forskjellige bivirkninger basert på rapporterte bivirkninger i forskningslitteraturen. Dette er bivirkninger som på sikt kan føre til mer alvorlige helseplager.</p> <p><blockquote> Det er også alvorlig at nær halvparten av de som drikker energidrikk, sier at de har opplevd bivirkninger. Mest vanlig er plutselig energifall, søvnforstyrrelser, men også skjelving, hjertebank, hyperaktivitet, hodepine og brystsmerter.</blockquote></p> <ul><li>22 prosent har opplevd høy energi, med påfølgende plutselig fall i energi.</li><li>Nær en av fem (17 prosent) har opplevd søvnforstyrrelser.</li><li>Over ti prosent sier de har opplevd skjelving, hjertebank, hyperaktivitet og hodepine.</li><li>Konsentrasjonsvansker, nervøsitet, kvalme/oppkast, brystsmerter og nedstemthet er rapportert av 3–8&nbsp;prosent av deltakerne.</li></ul> <h2>Aldersgrense vil være målrettet og effektivt</h2> <p>Forbrukerrådet mener det er nødvendig å gjøre noe når energidrikk er blitt en del av kostholdet til enda flere barn og unge.</p> <p><blockquote>Innføring av lovpålagt aldersgrense vil være et målrettet, effektivt og nødvendig tiltak, som flere andre land har innført, eller vurderer å innføre. Instefjord mener det er bra at folkehelseminister Åse Michaelsen har initiativ på dette området.</blockquote></p> <p><blockquote>Flere butikker og kjeder rapporterer om frivillig innføring av aldersgrense. Det er mye forvirring om aldersgrense nå. Ulike butikker oppgir ulike aldersgrenser. Vi håper også dagligvarekjedene ville se positivt på en aldersgrense som vil sikre konkurranse på like vilkår, avslutter Instefjord.</p></blockquote><a href='https://fil.forbrukerradet.no/uploads/2018/09/rapport-2018-energidrikk-barn-og-unge.pdf'><p class='white_button'>Rapport 2018: Energidrikk, barn og unge</p></a>", authors: [
+                {name: "Guro Birkeland Tangen", desc: "Pressekontakt / Kommunikasjonsrådgiver", phone: "(+47)995 69 273", imgsrc: "Guro_Birkeland_Tangen", other: "gbt@forbrukerradet.no", otherlink: "mailto:gbt@forbrukerradet.no"},
+                {name: "Gunstein Instefjord" , desc: "Fagdirektør for handel", phone: "(+47) 905 96 780", imgsrc: "FPA_Gunstein_Instefjord", other: "Høyoppløselig foto av Gunstein Instefjord"}
+            ] },
+            {id: 2, title: "Vi klager inn Coca Colas YouTube-kanal", fullTitle: "Klager inn Coca-Colas Youtube-kanal for brudd på bransjens retningslinjer", imgsrc: "coca-cola-650x431", description: "Forbrukerrådet mener Coca-Colas Youtube-kanal CokeTV Norge i sin helhet er ren markedsføring rettet mot barn og unge, og klager inn kanalen til Matbransjens Faglige Utvalg (MFU).", metadata: "Publisert 31. oktober, 2018 av Guro Birkeland Tangen", story: "<p>Programleder for kanalen er tidligere barne-TV-vert, Markus Bailey, og blant gjestene finner vi Dennis Variede, Malin Nesvoll, Emzia og Ola Klæbo.</p> <p>– CokeTV Norge er i sin helhet markedsføring av Coca-Cola. Ikke bare kjennetegnes kanalen av kjendisprofiler, men den bygger også på humor, konkurranser og språk som klart appellerer til barn og ungdom. Dette kommer også tydelig fram i kommentarfeltet, der mange av de som engasjerer seg, er fra de helt unge aldersgruppene, sier fagdirektør Gunstein Instefjord i Forbrukerrådet.</p> <p>MFUs retningslinjer er tydelige på at matbransjen ikke skal rette markedsføring av usunn mat og drikke mot barn under 13 år, og skal vise aktsomhet mot ungdom.</p> <br> <p>Forbrukerrådet har i flere år rettet oppmerksomhet mot markedsføring mot ungdom og behovet for å beskytte denne gruppen, men MFU har ennå ikke felt noen for uaktsom markedsføring.</p> <p>I klagen mot CokeTV Norge ønsker Forbrukerrådet at MFU vurderer både om Youtube-kanalen bryter aldersgrensen på 13 år, og om kanalen viser tilstrekkelig aktsomhet for ungdom.</p> <h2>Bransjen må ta grep</h2> <p>Instefjord mener klagen av CokeTV Norge gir matbransjen en mulighet til å vise at de ønsker å beskytte både barn og ungdom.</p> <p>– Det er spesielt viktig å slå ned på overtramp som gjelder markedsføring i sosiale medier. Dette er noe barn og unge bruker mye tid på, og reklamen der er ofte forkledd som underholdning.</p> <p>Utvalget har ikke klargjort hva det betyr å vise aktsomhet i veiledningen som er laget for markedsføring i sosiale medier.</p> <p>– Hvis ikke utvalget får på plass noen praksis på aktsomhetspunktet som gjelder ungdom, er det på tide at retningslinjene strammes inn – eller at ordningen erstattes med en lovregulering, sier Instefjord.</p> <div class='white_button'><a href='https://fil.forbrukerradet.no/wp-content/uploads/2018/10/mfu-klage-pa-coke-tv-norge-261018.pdf'>Les Forbrukerrådets klage på CokeTV Norge til MFU</a></span>", 
+            authors: [
+                {name: "Guro Birkeland Tangen", desc: "Pressekontakt / Kommunikasjonsrådgiver", phone: "(+47)995 69 273", imgsrc: "Guro_Birkeland_Tangen", other: "gbt@forbrukerradet.no", otherlink: "mailto:gbt@forbrukerradet.no"}
+            ]},
+            {id: 3, title: "Spar 22.720 kroner i gebyr på aksjesparekonto", fullTitle: "Spar 22 720 kroner i gebyr på aksjesparekonto", imgsrc: "fond", description: "Nå i november har du en unik mulighet til å bytte ut dyre og dårlige fond med bedre og billigere fond i en aksjesparekonto (ASK), og samtidig utsette gevinstskatten. Og aller viktigst: Det er mye å spare på å velge bort høye gebyrer på både aksjesparekonto og aksjefond, viser en undersøkelse fra Finansportalen.", metadata: "Publisert 8. november, 2018 av Henrik Ebne", story: "<p>‒ Mange er nok opptatt av gebyrene for selve aksjesparekontoen, men glemmer det som er betydelig viktigere for hvilken avkastning du kan forvente å sitte igjen med, nemlig gebyrene på fondene på aksjesparekontoen, sier Elisabeth Realfsen som er fagansvarlig for Finansportalen.</p><h2>Penger å spare på gebyrer</h2><p><a href='https://www.finansportalen.no/'>Finansportalen.no</a> har undersøkt gebyrene for aksjesparekonti. Undersøkelsen omfatter både gebyrene for selve aksjesparekontoen og gebyrene for de billigste fondene. Den er et tidsbilde, som ble utført i uke 43 i 2018.</p><p>‒ Undersøkelsen viser at for et sparebeløp på 200&nbsp;000 kroner utgjør gebyrforskjellene 22&nbsp;720 kroner over 10 år, mellom den dyreste og billigste aksjesparekontoen, kan Realfsen fortelle.</p><p>Sparebank1, SBanken, KLP, Nordnet og DNB er de billigste. Nordea er dobbelt så dyr som DNB. &nbsp;Eika-bankene og Kron er også billige med tanke på gebyrer, men de har et annet konsept enn de øvrige og er derfor ikke med i oversikten.</p><p>Rangering finner du nederst i saken.</p><h2>Lønnsomt tross gebyr</h2><p>Et mindretall av tilbydere tar gebyrer for å flytte aksjesparekontoen til en konkurrent.</p><p>‒ Gebyrer for å flytte kontoen til en annen leverandør kan virke konkurransehemmende, men foreløpig er gebyrene på et relativt lavt nivå. Vi vil følge nøye med på flyttegebyrene, sier Realfsen.</p><h2>Fondsgebyrene viktigst</h2><p>Forvaltningsgebyrene i fondene betyr mest for lønnsomheten. Disse gebyrene belaster de samme sparepengene år etter år, og har stor betydning i det lange løp. Aksjefond med svært lave gebyrer&nbsp;– indeksfond – gir derfor bedre avkastning enn de tradisjonelle aktive aksjefondene, <a href='https://www.forbrukerradet.no/undersokelse/no-undersokelsekategori/velge-aktive-aksjefond-eller-indeksfond-20-ars-analyse/'>viser en analyse gjennomført av Forbrukerrådet.</a></p><h2>Bytt ut dårlige og dyre fond</h2><p>Aksjesparekontoens skattegunstige overgangsregler var opprinnelig satt til nyttår, men er i praksis innskjerpet til å gjelde 15. desember. Aksjefond og aksjer du allerede eier kan flyttes inn på aksjesparekontoen innen fristen.</p><p>‒ Overgangsreglene er tidenes mulighet til å kvitte seg med dyre og dårlige fond, det vil si aksjefond med for høye gebyrer eller som taper mot øvrige fond, sier Realfsen.</p><p>– På grunn av børsens langvarige oppgang har også de fleste dårlige fond gitt avkastning som er skattepliktig. Disse fondene kan innen nyttår byttes ut mot billigere og bedre aksjefond uten å utløse skatt. Den utsatte gevinstskatten videreføres og gir en renters-rente-effekt, og dermed økt avkastning, sier Realfsen.</p><p>‒ Første steg er å opprette en aksjesparekonto, deretter flytte fondet inn på kontoen innen 15. desember, helst i løpet av november da bankene har tekniske utfordringer med overgangsordningen. Når overføringen er utført, kan det være fornuftig å selge dyre fond og erstatte dem med fond med lavere gebyrer, oppfordrer Realfsen.</p><p><a href='https://www.finansportalen.no/?p=5700'>Mer om undersøkelsen.</a></p><p><a href='https://www.finansportalen.no/?p=5720'>Mer detaljerte tabeller.</a></p><h2><strong>Så mye utgjør gebyrene over 10 år</strong></h2><p>Tabellen viser gebyrer for de ulike aksjesparekontoene (ASK) over ti år. Undersøkelsen ble utført i uke 43 i 2018. Beregningen av gebyrer: sparebeløp 200&nbsp;000 kroner stående i tre aksjefond over 10 år. Deretter flyttes fondene til konkurrerende leverandør. De årlige fondsgebyrene er beregnet slik: Fondet med lavest gebyr i hver av kategoriene, vektet 60 % i globalt indeksfond, 30 % i aktivt norsk fond og 10 % i norsk indeksfond.</p><p><a href='https://www.finansportalen.no/andre-valg/artikler/aksjesparekonto/'>Sjekkliste for aksjesparekonto (ASK)</a></p>", 
+            authors: [
+                {name: "Henrik Ebne", desc: "Pressekontakt / Kommunikasjonsrådgiver", phone: "(+47)926 36 422", imgsrc: "Henrik_Ebne", other: "henrik.ebne@forbrukerradet.no", otherlink: "mailto:henrik.ebne@forbrukerradet.no"}
+            ]}
+        ]
+    }
+
+    var url_string = window.location.href;
+    var thisurl = new URL(url_string);
+    var thisID = thisurl.searchParams.get("id");
+    console.log(thisID);
+
+    var jsonPlacement = parseInt(thisID) - 1;
+    console.log(jsonPlacement);
+    var thisNews = newsListJSON.newsList[jsonPlacement];
+
+    var title = thisNews.title;
+    var fullTitle = thisNews.fullTitle;
+    var description = thisNews.description;
+    var imgsrc = thisNews.imgsrc;
+    var metadata = thisNews.metadata;
+    var story = thisNews.story;
+    var imgDiv = `./img/news/${imgsrc}.jpg`;
+    console.log(imgDiv);
+
+    $(".title").html(fullTitle);
+    $(".description").html(description);
+    $(".metadata").html(metadata);
+    $(".story").html(story);
+    $(".newsimg").css("background-image", "url(" + imgDiv + ")");  
+
+    $.each(thisNews.authors, function(i, author) {
+        var name = author.name;
+        var desc = author.desc;
+        var phone = author.phone;
+        var aimgsrc = author.imgsrc;
+        var other = author.other;
+        var otherlink = author.otherlink;
+
+        var addedHtml = `
+            <div class="author">
+                <div class="authorimage" style="background-image:url(./img/authors/${aimgsrc}.jpg)"></div>
+                <div class="authorinfo">
+                    <p class="desc">${desc}</p>
+                    <h2>${name}</h2>
+                    <p>${phone}</p>
+                    <p><a href="${otherlink}">${other}</a></p>
+                </div>
+            </div>
+        `;
+        $(".bottom").append(addedHtml);
+    })
+
+
+})();
