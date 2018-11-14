@@ -6,6 +6,7 @@
                 id: 1, 
                 title: "Angrer du på et kjøp?", 
                 description: "Når du handler i vanlig butikk, er du prisgitt butikkens bytteregler. Du har kun angrerett når du handler utenfor fast utsalgssted, slik som internett og dørsalg.", 
+                category: "Tips, råd og dine rettigheter",
                 partsList: [
                     {
                         partID: 1, 
@@ -62,6 +63,7 @@
                 id: 2, 
                 title: "Grunn til å klage?", 
                 description: "Du kan reklamere opptil fem år, avhengig av hvor lenge det du har kjøpt er ment å vare. Det er to års klagefrist ved kjøp fra privatperson.", 
+                category: "Tips, råd og dine rettigheter",
                 partsList: [
                     {
                         partID: 1, 
@@ -95,7 +97,285 @@
                         ]
                     }
                 ]
-            } //end id 2
+            }, //end id 2
+            {
+                id: 3, 
+                title: "Slik klager du", 
+                description: "Er det en feil eller mangel med det du har kjøpt? Her finner du informasjon om hvordan du går frem for å klage.", 
+                category: "Tips, råd og dine rettigheter",
+                partsList: [
+                    {
+                        partID: 1, 
+                        partTitle: "Sjekk om du har grunnlag til å klage", 
+                        itemsList: [
+                            {itemTitle: "Hvem er ansvarlig for feilen?", itemText: "<p>Hvis årsaken til feilen fulgte med kjøpet, kan du reklamere. Er det en fabrikasjonsfeil, eller du ikke har fått det du har betalt for, må selgeren ordne opp.</p><p>Hvis du kjente til feilen, eller den skyldes noe du har gjort, eller et uhell, må du ta regningen selv. Du kan eventuelt sjekke om du har en forsikring du kan benytte.</p><div class='white_button'><a href='https://www.forbrukerradet.no/forside/feil-ved-vare/'>Les mer om du har grunn til å klage</a></div>"}
+                        ]
+                    },
+                    {
+                        partID: 2, 
+                        partTitle: "Hvordan klager jeg til selger?", 
+                        itemsList: [
+                            {itemTitle: "Gjør det skriftlig", itemText: '<p><a id="selger_klage"></a>Klage skriftlig og send med kvittering, eller garantibevis sammen med eventuell annen dokumentasjon. Da reduserer du misforståelsene, og du kan senere bevise at du klaget tidsnok. Sett en svarfrist, og bruk gjerne et av Forbrukerrådets klagebrev.<a id="selgerklage"></a></p><div class="white_button"><a href="https://www.forbrukerradet.no/forside/klagebrev/">Klagebrev til selger</a></div>'}
+                        ]
+                    },
+                    {
+                        partID: 3, 
+                        partTitle: "Selgerens plikt!", 
+                        itemsList: [
+                            {itemTitle: "Må ta imot klagen", itemText: "<p>Du har krav på at selgeren vurderer klagen din, og vi anbefaler at du forholder deg til ham. Du har mulighet til heller å sende klagen til for eksempel importør eller produsent, men det er fritt valg for deg.</p>"},
+                            {itemTitle: "Betaling for undersøkelse", itemText: "<p>Selgeren må kanskje gjøre undersøkelser for å svare på klagen din. Hvis det viser seg at du selv har ansvaret for feilen, kan han ta betalt for det, men kun hvis dere avtalte det på forhånd. Har selgeren ansvaret, skal du uansett ikke betale.</p>"}
+                        ]
+                    },
+                    {
+                        partID: 4, 
+                        partTitle: "Hva når jeg har handlet utenlands?", 
+                        itemsList: [
+                            {itemTitle: "EU og Island", itemText: '<p>Dersom du vil klage på noe du har kjøpt av en næringsdrivende i EU-landene eller på Island, kan du <a href="http://forbrukereuropa.no/no/">få hjelp av Forbruker Europa.</a></p>'},
+                            {itemTitle: "Andre land", itemText: '<p>Ellers i verden er det store variasjoner når det gjelder klagemuligheter. Søk på nettet etter hva som gjelder i det landet du har handlet i.</p>'}
+                        ]
+                    },
+                    {
+                        partID: 5, 
+                        partTitle: "Hva har jeg rett til når selgeren reparerer?", 
+                        itemsList: [
+                            {itemTitle: "Låneprodukt", itemText: '<p>Noen ting er vanskelige å unnvære. Da har du krav på å få låne en erstatning av butikken hvis det ikke blir urimelig dyrt for butikken målt opp mot hvilken nytte du har av det. Tingen behøver ikke å være lik din, men skal kunne brukes på omtrent samme måte. Du kan be om det fra første dag, og har krav på det hvis det er klart at reparasjonen tar mer enn en uke.</p><p>Hvis du ikke får låne for eksempel en mobil, til tross for at du har krav på det, kan du ha krav på å heve kjøpet. Det vil si at du leverer inn det du har kjøpt, og får tilbake pengene.</p>'}
+                        ]
+                    }
+
+                ]
+            },  //end id 3
+
+            {
+                id: 4, 
+                title: "Kontrakter", 
+                description: "Det er lurt å bruke kontrakt når du kjøper eller leier. Det blir enklere å fastslå hva dere er blitt enige om og gjør at du står sterkere ved en eventuell konflikt.", 
+                category: "Tips, råd og dine rettigheter",
+                partsList: [
+                    {
+                        partID: 1, 
+                        partTitle: "Husleiekontrakt", 
+                        description: "Standardkontrakt for leie av bolig. Det skal skrives leiekontrakt hvis en av partene krever det.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 2, 
+                        partTitle: "Kjøp av fast eiendom", 
+                        description: "Kontrakten kan brukes ved kjøp av hus, eierseksjon eller hytte mellom private uten bruk av megler.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 3, 
+                        partTitle: "Håndverkertjenester", 
+                        description: "Kontrakten kan brukes for avtaler om arbeid på fast eiendom, men ikke for nyoppføring av bolig.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 4, 
+                        partTitle: "Kjøp av bruktbil", 
+                        description: "Bruk kontrakten når du skal kjøpe bruktbil, så forsikrer du deg mot de verste bilfellene.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 5, 
+                        partTitle: "Kjøp av brukt campingvogn", 
+                        description: "Dette er en kontrakt som kan brukes ved salg av brukt campingvogn mellom privatpersoner.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 6, 
+                        partTitle: "Kjøp av brukt bobil", 
+                        description: "Dette er en kontrakt som kan brukes ved salg av brukt bobil mellom privatpersoner.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 7, 
+                        partTitle: "Service og reparasjon på bil", 
+                        description: "Kontrakten kan brukes mellom forbruker og verksted ved avtale om service eller reparasjon på bil.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 8, 
+                        partTitle: "Kjøp av brukt motorsykkel/moped", 
+                        description: "Dette er en kontrakt som kan brukes ved salg av brukt motorsykkel, moped eller ATV mellom privatpersoner.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 9, 
+                        partTitle: "Kjøp av fritidsbåt", 
+                        description: "Dette er en kontrakt som kan brukes ved salg av brukt fritidsbåt mellom privatpersoner.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 10, 
+                        partTitle: "Kjøp av ting", 
+                        description: "Kontrakt ved kjøp og salg av ting. Fyll ut alle punktene som er relevante, og undersøk gjenstanden først.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 11, 
+                        partTitle: "Kjøp av husdyr", 
+                        description: "Kontrakt for når du kjøper eller selger husdyr. Fyll ut alle relevante punkter, og undersøk dyret før inngåelse.",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    }
+
+                ]
+            },  //end id 3
+
+            {
+                id: 5, 
+                title: "Klag til selger", 
+                description: "Det lønner seg å klage skriftlig til selger. Da reduserer du faren for misforståelser, og du kan bevise at du har klagd i tide. Du må gjerne benytte våre brev. <br><br> <span class='addinfo'>NB! Husk å laste ned brevet til egen pc før utfylling</span>", 
+                category: "Tips, råd og dine rettigheter",
+                partsList: [
+                    {
+                        partID: 1, 
+                        partTitle: "Kvalitet", 
+                        description: "Har ikke varen eller tjenesten forventet kvalitet?",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 2, 
+                        partTitle: "Pris", 
+                        description: "Er ikke prisen på varen eller tjenesten som avtalt?",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    },
+                    {
+                        partID: 3, 
+                        partTitle: "Forsinkelse", 
+                        description: "Er leveransen av varen eller tjenesten forsinket?",
+                        itemsList: [
+                            {itemTitle: "Bokmål", itemLink: ""},
+                            {itemTitle: "Nynorsk", itemLink: ""},
+                            {itemTitle: "In English", itemLink: ""}
+                        ]
+                    }
+                ]
+            } //end id 5
+
         ] //end siteList
+    } //end JSON
+
+    printPage();
+
+    $(".part-title").on("click", function(){
+        $(this).next(".maincontent").slideToggle();
+    })
+
+    function printPage() {
+        var url_string = window.location.href;
+        var thisurl = new URL(url_string);
+        var thisID = thisurl.searchParams.get("id");
+        var numberID = parseInt(thisID);
+
+        var jsonPlacement = parseInt(thisID) - 1;
+        var thisSite = vihjelperJSON.siteList[jsonPlacement];
+
+        var imgsrc = "./img/icons/vihjelper.png";
+        var title = thisSite.title;
+        var description = thisSite.description;
+        var category = thisSite.category;
+
+        $(".site-img").css({"background-image": "url(" + imgsrc + ")"});
+        $(".title").html(title);
+        $(".description").html(description);
+        $(".category").html(category);
+
+        if(numberID == 1 || numberID == 2 || numberID == 3) {
+            $.each(thisSite.partsList, function(i, part) {
+                var maincont = $(".maininfo");
+                var partTitle = part.partTitle;
+                var partID = part.partID;
+                var addHtml = `
+                    <div class="part-title" data="${partID}">
+                        <h2>${partTitle}</h2>
+                    </div>
+                    <div class="maincontent" data="${partID}">
+                `;
+                $.each(part.itemsList, function(i, item) {
+                    var itemTitle = item.itemTitle;
+                    var itemText = item.itemText;
+                    addHtml += `
+                        <div class="leftcontent"><h5>${itemTitle}</h5></div>
+                        <div class="rightcontent">${itemText}</div>
+                    `;
+                })
+
+                addHtml += `</div>`;
+                maincont.append(addHtml);
+            })
+        } else if(numberID == 4 || numberID == 5) {
+            $.each(thisSite.partsList, function(i, part) {
+                var maincont = $(".maininfo");
+                var partTitle = part.partTitle;
+                var partID = part.partID;
+                var partDesc = part.description;
+                var addHtml = `
+                    <div class="contract-title">
+                        <h2>${partTitle}</h2>
+                        <p class="description">${partDesc}</p>
+                `;
+                $.each(part.itemsList, function(i, item) {
+                     var itemTitle = item.itemTitle;
+                     var itemLink = item.itemLink;
+                     addHtml += `
+                        <div class="link">${itemTitle}</div>
+                     `;
+                })
+                addHtml += `</div>`;
+                maincont.append(addHtml);
+            })
+        }
     }
 })();

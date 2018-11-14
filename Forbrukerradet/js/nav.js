@@ -14,30 +14,54 @@
 
     });
 
+    var  mn = $("nav");
+    mns = "main-nav-scrolled";
+    hdr = $('nav').height();
+
+    if(window.location.href.includes("index")) {
+        $(window).scroll(function() {
+            if( $(this).scrollTop() > hdr ) {
+                $("nav").addClass(mns);
+                $(".logo-nav").addClass("new-nav-logo");
+                $(".linewrap span").addClass("new-color");
+                $(".search").addClass("new-search");
+            } else {
+                $("nav").removeClass(mns);
+                $(".logo-nav").removeClass("new-nav-logo");
+                $(".linewrap span").removeClass("new-color");
+                $(".search").removeClass("new-search");
+            }
+        });
+    } else {
+        mn.addClass(mns);
+        $(".logo-nav").addClass("new-nav-logo");
+        $(".linewrap span").addClass("new-color");
+        $(".search").addClass("new-search");
+    }
     const pagesJSON = {
         pageList: [
             {title: "Hjem", url: "index.html", linkslist: false},
             {title: "Vi hjelper", color:"#27334A", icon: "vihjelper.png", linkslist: [
-                {url: "angrer-du-pa-et-kjop", name: "Angrer du på et kjøp?"},
-                {url: "grunn-til-a-klage", name: "Grunn til å klage?"},
-                {url: "slik-klager-du", name: "Slik klager du"},
-                {url: "kontrakter", name: "Kontrakter"},
-                {url: "klagebrev", name: "Klagebrev"}
+                {url: "vihjelper.html?id=1", name: "Angrer du på et kjøp?"},
+                {url: "vihjelper.html?id=2", name: "Grunn til å klage?"},
+                {url: "vihjelper.html?id=3", name: "Slik klager du"},
+                {url: "vihjelper.html?id=4", name: "Kontrakter"},
+                {url: "vihjelper.html?id=5", name: "Klagebrev"}
             ]},
             {title: "Tips og råd", color: "#27334A", icon: "tips.png", linkslist: [
-                {url: "bil", name: "Bil"},
-                {url: "bolig", name: "Bolig"},
-                {url: "okonomi-og-betaling", name: "Økonomi og betaling"},
-                {url: "digitalt", name: "Digitalt"},
-                {url: "reise", name: "Reise"},
-                {url: "andre-varer-og-tjenester", name: "Andre varer og tjenester"}
+                {url: "tips.html?id=1", name: "Bil"},
+                {url: "tips.html?id=2", name: "Bolig"},
+                {url: "tips.html?id=3", name: "Økonomi og betaling"},
+                {url: "tips.html?id=4", name: "Digitalt"},
+                {url: "tips.html?id=5", name: "Reise"},
+                {url: "tips.html?id=6", name: "Andre varer og tjenester"}
             ]},
             {title: "Forbrukerpolitikk", color: "#27334A", icon: "forbrukerpolitikk.png", linkslist: [
-                {url: "bolig", name: "Bolig"},
-                {url: "finans", name: "Finans"},
-                {url: "handel", name: "Handel"},
-                {url: "digitalt", name: "Digitalt"},
-                {url: "offentlige-tjenester", name: "Offentlige tjenester"}
+                {url: "forbrukerpolitikk?id=1", name: "Bolig"},
+                {url: "forbrukerpolitikk?id=2", name: "Finans"},
+                {url: "forbrukerpolitikk?id=3", name: "Handel"},
+                {url: "forbrukerpolitikk?id=4", name: "Digitalt"},
+                {url: "forbrukerpolitikk?id=5", name: "Offentlige tjenester"}
             ]},
             {title: "Nyheter", url: "nyheter.html", linkslist: false},
             {title: "Undersøkelser", url: "undersøkelser.html", linkslist: false},

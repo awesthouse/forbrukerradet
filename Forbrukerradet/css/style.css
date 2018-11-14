@@ -13,8 +13,14 @@ nav {
     width:100%;
     position: fixed;
     z-index:100;
-    background:white;
-    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    transition: ease-in-out all 0.3s;
+}
+.main-nav-scrolled {
+    background-color:#fff;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+}
+.new-nav-logo {
+    background-image:url(./../img/forbrukerradet_logo.svg)!important;
 }
 .shownav {
     cursor: pointer;
@@ -33,7 +39,7 @@ nav {
     position: absolute;
     margin-top:5px;
     left:70px;
-    color:#172430;
+    color:#fff;
 }
 
 .linewrap {
@@ -49,14 +55,16 @@ nav {
 .linewrap span {
     height: 2px;
     width: 27px;
-    background-color: #172430;
+    background-color: #fff;
     margin-bottom: 5px;
     display: block;
     -webkit-transition: transform ease-in-out 0.3s;
     transition: transform 0.3s;
     opacity: 1;
     position: relative; }
-
+.new-color {
+    background-color:#27334A!important;
+}
 .shownav:hover { cursor: pointer; }
 
 .shownav:hover .line-zero { transform: translateY(-3px);}
@@ -81,8 +89,8 @@ background-color:#222!important;}
     margin:auto;
     height:50px;
     width:240px;
-    background-image:url(./../img/forbrukerradet_logo.svg);
-    background-size:cover;
+    background-image:url(./../img/forbrukerradet_logo.png);
+    background-size:90%;
     background-repeat: no-repeat;
     background-position: center;
     margin-top:10px;
@@ -138,16 +146,30 @@ background-color:#222!important;}
 .mainnav ul li ul li {
     color:#222;
 }
+.search {
+    height: 50px;
+    width:50px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    background-image:url(./../img/icons/search_white.png);
+    background-size:80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.new-search {
+    background-image:url(./../img/icons/search_black.png)!important;
+}
 .maincont {
     width:100%;
     height:auto;
     position: relative;
-    padding-top:70px;
 }
 .frontpagepic {
     width:100%;
     position: relative;
-    height:450px;
+    height:700px;
     background-image:url(./../img/forsideskjerm.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -190,7 +212,7 @@ background-color:#222!important;}
     height:300px;
     color:#27334A;
     margin:0px auto;
-    box-shadow: 0px 7px 14px #ddd;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
     position: relative;
 }
 .pagesinside {
@@ -231,7 +253,7 @@ background-color:#222!important;}
     height:440px;
     color:#27334A;
     margin:0px auto;
-    box-shadow: 0px 7px 14px #ddd;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
     position: relative;
 }
 .newsinside {
@@ -252,27 +274,27 @@ background-color:#222!important;}
     margin:auto;
     padding-bottom:20px;
 }
-.newscont article {
+.newsinside article {
     width:33.3333367%;
     float:left;
     position: relative;
     text-align: center;
     transition:ease-in-out all 0.4s;
 }
-.newscont article:hover {
+.newsinside article:hover {
     opacity: 0.8;
 }
-.newscont article img {
+.newsinside article img {
     width:90%;
     margin:auto;
 }
-.newscont article h2 {
+.newsinside article h2 {
     text-align: left;
-    font-size:1.5em;
+    font-size:1.2em;
     width:90%;
     margin:auto;
 }
-.newscont .morelink {
+.morelink {
     width:370px;
     height:20px;
     border:2px solid #27334A;
@@ -283,9 +305,12 @@ background-color:#222!important;}
     transition:ease-in-out all 0.4s;
     cursor: pointer;
 }
-.newscont .morelink:hover {
+.morelink:hover {
     background-color: #27334A;
     color:#fff;
+}
+.newspagecont {
+    padding-top:150px;
 }
 
 /* NEWS PAGE */
@@ -295,11 +320,11 @@ background-color:#222!important;}
     padding-top:100px;
     position: relative;
 }
-.top h5 {
+.newsarticle .top h5 {
     border-bottom:1px solid #333;
     padding:3px 0;
 }
-.top h2 {
+.newsarticle .top h2 {
     padding-top:30px;
     font-size:1.7em;
     font-weight: 600;
@@ -347,7 +372,7 @@ background-color:#222!important;}
     list-style: disc;
     font-weight: 300;
 }
-.story .white_button {
+.white_button {
     margin-top:40px;
     border:2px solid #27334A;
     color:#27334A;
@@ -356,7 +381,7 @@ background-color:#222!important;}
     width:300px;
     transition: ease-in-out all 0.4s;
 }
-.story .white_button:hover {
+.white_button:hover {
     background-color:#27334A;
     color:#fff;
 }
@@ -399,4 +424,158 @@ background-color:#222!important;}
 }
 .authorinfo p a {
     text-decoration: underline;
+}
+
+/*VI HJELPER*/
+.site-top {
+    width:70%;
+    margin:auto;
+    padding-top:200px;
+}
+.site-img {
+    width:140px;
+    height:140px;
+    position: relative;
+    float:left;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#27334A;
+    border-radius: 50%;
+    margin-top:10px;
+}
+.site-left {
+    padding-left:30px;
+    float:left;
+    position: relative;
+    max-width: 50%;
+}
+.site-left .category {
+    border-bottom:1px solid #27334A;
+    padding:3px 0;
+}
+.site-left .title {
+    font-size:2em;
+    font-weight: 600;
+    margin-top:20px;
+}
+.site-left .description {
+    font-weight: 300;
+}
+
+.maininfo {
+    width:80%;
+    margin:auto;
+    clear:both;
+    padding-top:70px;
+}
+.part-title {
+    width:100%;
+    background-color:#f5f5f5;
+    height:80px;
+    line-height: 80px;
+    vertical-align: middle;
+    margin:20px 0;
+    clear:both;
+    cursor: pointer;
+}
+.part-title h2 {
+    padding-left:50px;
+    font-size:1.4em;
+    font-weight: 600;
+}
+.leftcontent {
+    clear:both;
+    width:28%;
+    padding:0 2%;
+    position: relative;
+    float:left;
+    height:auto;
+    font-weight: 600;
+    padding-bottom:20px;
+    font-size:1.2em;
+}
+.rightcontent ul {
+    list-style: disc;
+    padding-left:20px;
+}
+.rightcontent p {
+    padding-bottom:15px;
+}
+.rightcontent {
+    width:64%;
+    padding:0 2%;
+    position: relative;
+    float:left;
+    height:auto;
+    padding-bottom:20px;
+}
+.maincontent {
+    position: relative;
+    height: auto;
+}
+.contract-title {
+    width:26%;
+    padding:5% 2%;
+    margin:1%;
+    height:300px;
+    float:left;
+    position: relative;
+    background-color:#f5f5f5;
+    text-align: center;
+}
+.contract-title h2 {
+    font-size:1.4em;
+    font-weight: 600;
+}
+.contract-title p {
+    font-size:0.875em;
+    margin:30px 0;
+}
+.addinfo {
+    font-weight: 600;
+}
+.link {
+    border:2px solid #27334A;
+    padding:10px;
+    margin:10px 10px;
+    transition:ease-in-out all 0.4s;
+    cursor: pointer;
+}
+.link:hover {
+    background-color:#27334A;
+    color:#f5f5f5;
+}
+.maintip {
+    width:960px;
+    margin:auto;
+    clear: both;
+    padding-top:100px;
+}
+.tipdiv {
+    width:480px;
+    height:150px;
+    position: relative;
+    float:left;
+}
+.left {
+    width:100px;
+    height:100px;
+    background-color:#27334A;
+    position: relative;
+    float:left;
+    background-image:url(./../img/icons/arrow.png);
+    background-size:70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right {
+    position: relative;
+    float:left;
+    width:320px;
+    padding:20px;
+}
+.right h2 {
+    font-size: 1.4em;
+    font-weight: 600;
 }
