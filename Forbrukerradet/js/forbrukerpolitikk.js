@@ -11,12 +11,12 @@
                     {
                         worthID: 1,
                         wTitle: "En trygg bolighandel",
-                        imgsrc: ""
+                        imgsrc: "Randi-Flesland-nær-bredde-smil-stortinget-foto.jpg"
                     },
                     {
                         worthID: 2,
                         wTitle: "To av tre betaler for mye for strømmen",
-                        imgsrc: ""
+                        imgsrc: "31082015_strom1.png"
                     }
                 ],
                 causesList: [
@@ -226,13 +226,13 @@
                         name: "Gunstein Instefjord", 
                         desc: "Fagdirektør Handel", 
                         phone: "(+47) 905 96 780", 
-                        imgsrc: "FPA_Gunstein_Ingefjord", other: "gun­stein.in­ste­fjord@for­bru­ker­ra­det.no", otherlink: "mailto:gun­stein.in­ste­fjord@for­bru­ker­ra­det.no"
+                        imgsrc: "FPA_Gunstein_Instefjord", other: "gun­stein.in­ste­fjord@for­bru­ker­ra­det.no", otherlink: "mailto:gun­stein.in­ste­fjord@for­bru­ker­ra­det.no"
                     },
                     {
                         name: "Kaja Lund-Iversen", 
                         desc: "Politisk rådgiver", 
                         phone: "", 
-                        imgsrc: "Gunstein_Ingefjord", other: "kaja.lund-iver­sen@for­bru­ker­ra­det.no", otherlink: "mailto:kaja.lund-iver­sen@for­bru­ker­ra­det.no"
+                        imgsrc: "Kaja_Lund_Iversen", other: "kaja.lund-iver­sen@for­bru­ker­ra­det.no", otherlink: "mailto:kaja.lund-iver­sen@for­bru­ker­ra­det.no"
                     },
                     {
                         name: "Guro Birkeland Tangen", desc: "Pressekontakt / Kommunikasjonsrådgiver", 
@@ -252,7 +252,7 @@
                     {
                         worthID: 1,
                         wTitle: "Tinder bends for consumer pressure",
-                        imgsrc: "appfail_1.jpg.jpg"
+                        imgsrc: "appfail_1.jpg"
                     },
                     {
                         worthID: 2,
@@ -314,7 +314,7 @@
                     },
                     {
                         name: "Gyrid Giæver", 
-                        desc: "Rådgiver", 
+                        desc: "Seniorrådgiver juridisk enhet", 
                         phone: "", 
                         imgsrc: "Gyrid_Giæver", other: "", otherlink: ""
                     },
@@ -436,6 +436,75 @@
         $(".title").html(title);
         $(".description").html(description);
         $(".category").html(category);
+    
+        $.each(thisSite.worthList, function(i, story) {
+            var cont = $(".cases");
+            var title = story.wTitle;
+            var imgsrc = story.imgsrc;
+            var addHtml = `
+                <article>
+                    <img src="./img/politikk/cases/${imgsrc}" />
+                    <h2>${title}</h2>
+                </article>
+            `;
+            cont.append(addHtml);
+        })
+
+        $.each(thisSite.causesList, function(i, cause) {
+            var cont = $(".causes");
+            var title = cause.title;
+            var description = cause.description;
+            var imgsrc = cause.imgsrc;
+            var addHtml = `
+                <div class="cause">
+                    <div class="thumbnail" style="background-image:url(./img/politikk/${imgsrc}"></div>
+                    <div class="inside">
+                        <h2>${title}</h2>
+                        <p>${description}</p>
+                        <div class="white_button">Les hele saken</div>
+                    </div>
+                </div>
+            `;
+            cont.append(addHtml);
+        })
+
+        $.each(thisSite.hearingsList, function(i, hearing) {
+            var cont = $(".hearings");
+            var title = hearing.title;
+            var description = hearing.description;
+            var date = hearing.date;
+            var addHtml = `
+                <div class="hearing">
+                    <h6>${date}</h6>
+                    <h2>${title}</h2>
+                    <p>${description}</p>
+                </div>
+            `;
+            cont.append(addHtml);
+        })
+
+        $.each(thisSite.peopleList, function(i, author) {
+            var cont = $(".people");
+            var name = author.name;
+            var desc = author.desc;
+            var phone = author.phone;
+            var aimgsrc = author.imgsrc;
+            var other = author.other;
+            var otherlink = author.otherlink;
+            var addedHtml = `
+                <div class="author">
+                    <div class="authorimage" style="background-image:url(./img/authors/${aimgsrc}.jpg)"></div>
+                    <div class="authorinfo">
+                        <p class="desc">${desc}</p>
+                        <h2>${name}</h2>
+                        <p>${phone}</p>
+                        <p><a href="${otherlink}">${other}</a></p>
+                    </div>
+                </div>
+            `;
+            cont.append(addedHtml);
+
+        })
     }
 
 })();

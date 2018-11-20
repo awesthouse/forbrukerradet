@@ -57,11 +57,11 @@
                 {url: "tips.html?id=6", name: "Andre varer og tjenester"}
             ]},
             {title: "Forbrukerpolitikk", color: "#27334A", icon: "forbrukerpolitikk.png", linkslist: [
-                {url: "forbrukerpolitikk?id=1", name: "Bolig"},
-                {url: "forbrukerpolitikk?id=2", name: "Finans"},
-                {url: "forbrukerpolitikk?id=3", name: "Handel"},
-                {url: "forbrukerpolitikk?id=4", name: "Digitalt"},
-                {url: "forbrukerpolitikk?id=5", name: "Offentlige tjenester"}
+                {url: "forbrukerpolitikk.html?id=1", name: "Bolig"},
+                {url: "forbrukerpolitikk.html?id=2", name: "Finans"},
+                {url: "forbrukerpolitikk.html?id=3", name: "Handel"},
+                {url: "forbrukerpolitikk.html?id=4", name: "Digitalt"},
+                {url: "forbrukerpolitikk.html?id=5", name: "Offentlige tjenester"}
             ]},
             {title: "Nyheter", url: "nyheter.html", linkslist: false},
             {title: "Undersøkelser", url: "undersøkelser.html", linkslist: false},
@@ -72,11 +72,11 @@
                 {url: "kommunetesten", name: "Kommunetesten"}
             ]},
             {title: "Dette er oss", color: "#27334A", icon: "oss.png", linkslist: [
-                {url: "om-oss", name: "Om oss"},
-                {url: "kontakt-oss", name: "Kontakt oss"},
-                {url: "jobb-hos-oss", name: "Jobb hos oss"},
-                {url: "presse", name: "Presse"},
-                {url: "horingssvar", name: "Høringssvar"}
+                {url: "om-oss.html", name: "Om oss"},
+                {url: "kontakt-oss.html", name: "Kontakt oss"},
+                {url: "jobb-hos-oss.html", name: "Jobb hos oss"},
+                {url: "presse.html", name: "Presse"},
+                {url: "horingssvar.html", name: "Høringssvar"}
             ]},
             {title: "Våre nettsteder", color: "#27334A", icon: "nettsider.png", linkslist: [
                 {url: "http://www.hvakostertannlegen.no/", name: "Hva koster tannlegen?"},
@@ -110,6 +110,59 @@
                 var addHtml = `<a href="${titleurl}"><li>${title}</li></a>`;
             }
             uldiv.append(addHtml);
+        })
+    }
+
+    printFooter();
+    function printFooter() {
+        var addHtml = `
+            <div class="fleft">
+                <ul class="links">
+                    <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+                    <li><a href="presse.html">Presse</a></li>
+                    <li></li>
+                    <li><a href="mailto:">Nettansvarlig Målfrid Hansen</a></li>
+                </ul>
+            </div>
+            <div class="fmiddle">
+                <div class="footerlogo"></div>
+                <ul class="social">
+                    <li><img src="./img/icons/social/facebook.png" width="50px" /></li>
+                    <li><img src="./img/icons/social/twitter.png" width="50px" /></li>
+                    <li><img src="./img/icons/social/youtube.png" width="50px" /></li>
+                </ul>
+                <p>Copyright Forbrukerrådet 2018</p>
+            </div>
+            <div class="fright">
+                <ul>
+                    <li><img src="./img/icons/social/mail.png" width="50px" /></li>
+                    <li><img src="./img/icons/social/rss.png" width="50px" /></li>
+                </ul>
+            </div>
+        `;
+        $("footer").html(addHtml);
+
+        var firstHtml = `
+            <div class="chatopen">
+                <div class="question">?</div>
+                <div class="questtext">Har du spørsmål?</div>
+                <div class="questcont">
+                    Chat med oss!
+                    <div class="button-dark">Start chat</div>
+                </div>
+            </div>
+        `;
+        $("footer").prepend(firstHtml);
+
+        $(".chatopen").on("mouseover", function(){
+            $(".chatopen").animate({width:"250px"});
+            $(".chatopen").animate({height: "300px"});
+        })
+        $(".chatopen").on("mouseleave", function(){
+            $(".chatopen").animate({height: "70px"});
+            $(".chatopen").animate({width:"70px"});
         })
     }
 

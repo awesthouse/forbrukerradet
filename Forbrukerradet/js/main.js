@@ -36,11 +36,11 @@
                 {url: "kommunetesten", name: "Kommunetesten"}
             ]},
             {title: "Dette er oss", color: "#27334A", icon: "oss.png", linkslist: [
-                {url: "om-oss", name: "Om oss"},
-                {url: "kontakt-oss", name: "Kontakt oss"},
-                {url: "jobb-hos-oss", name: "Jobb hos oss"},
-                {url: "presse", name: "Presse"},
-                {url: "horingssvar", name: "Høringssvar"}
+                {url: "om-oss.html", name: "Om oss"},
+                {url: "kontakt-oss.html", name: "Kontakt oss"},
+                {url: "jobb-hos-oss.html", name: "Jobb hos oss"},
+                {url: "presse.html", name: "Presse"},
+                {url: "horingssvar.html", name: "Høringssvar"}
             ]},
             {title: "Våre nettsteder", color: "#27334A", icon: "nettsider.png", linkslist: [
                 {url: "http://www.hvakostertannlegen.no/", name: "Hva koster tannlegen?"},
@@ -84,7 +84,7 @@
                 if(url.includes("http")) {
                     addHtml += `<a href="${url}" target="_blank"><li>${name}</li></a>`;
                 } else {
-                    addHtml += `<a href="${url}.html"><li>${name}</li></a>`;
+                    addHtml += `<a href="${url}"><li>${name}</li></a>`;
                 }
             })
         addHtml += `</ul></div></div>`
