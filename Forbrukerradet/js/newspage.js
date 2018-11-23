@@ -29,7 +29,7 @@
                 </article>
             `;
         })
-        addHtml += `</div><div class="morelink">Se flere saker</div></div>`;
+        addHtml += `</div><div class="morelink" onclick="alert('Kan ikke laste flere nyheter');">Last flere saker</div></div>`;
         maincont.append(addHtml);
     }
 })();

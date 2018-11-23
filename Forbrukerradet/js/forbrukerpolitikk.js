@@ -7,6 +7,7 @@
                 title: "Bolig",
                 description: "Vi jobber aktivt med å påvirke myndigheter og næringsliv i en forbrukervennlig retning gjennom dialog, påvirkningsarbeid og utredninger.",
                 category: "Forbrukerpolitikk", 
+                bgsrc: "bolig-fpa.jpg",
                 worthList: [
                     {
                         worthID: 1,
@@ -90,6 +91,7 @@
                 title: "Finans",
                 description: "Vi jobber aktivt med å påvirke myndigheter og næringsliv i en forbrukervennlig retning gjennom dialog, påvirkningsarbeid og utredninger.",
                 category: "Forbrukerpolitikk", 
+                bgsrc: "finans.jpg",
                 worthList: [
                     {
                         worthID: 1,
@@ -164,6 +166,7 @@
                 title: "Handel",
                 description: "Vi jobber aktivt med å påvirke myndigheter og næringsliv i en forbrukervennlig retning gjennom dialog, påvirkningsarbeid og utredninger.",
                 category: "Forbrukerpolitikk", 
+                bgsrc: "handel.jpg",
                 worthList: [
                     {
                         worthID: 1,
@@ -248,6 +251,7 @@
                 title: "Digital",
                 description: "Vi jobber aktivt med å påvirke myndigheter og næringsliv i en forbrukervennlig retning gjennom dialog, påvirkningsarbeid og utredninger.",
                 category: "Forbrukerpolitikk", 
+                bgsrc: "digital.jpg",
                 worthList: [
                     {
                         worthID: 1,
@@ -334,6 +338,7 @@
                 title: "Offentlig og helse",
                 description: "Vi jobber aktivt med å påvirke myndigheter og næringsliv i en forbrukervennlig retning gjennom dialog, påvirkningsarbeid og utredninger.",
                 category: "Forbrukerpolitikk", 
+                bgsrc: "offentlige-tjenester.jpg",
                 worthList: [
                     {
                         worthID: 1,
@@ -427,11 +432,14 @@
         var jsonPlacement = parseInt(thisID) - 1;
         var thisSite = casesJSON.casesList[jsonPlacement];
 
-        var imgsrc = "./img/icons/forbrukerpolitikk.png";
+        var bgsrc = thisSite.bgsrc;
+        var bgfullsrc = "./img/bgs/" + bgsrc;
+        var imgsrc = "./img/icons/blue/forbrukerpolitikk.png";
         var title = thisSite.title;
         var description = thisSite.description;
         var category = thisSite.category;
 
+        $(".site-top-bg").css({"background-image": "url(" + bgfullsrc + ")"});
         $(".site-img").css({"background-image": "url(" + imgsrc + ")"});
         $(".title").html(title);
         $(".description").html(description);

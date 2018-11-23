@@ -18,11 +18,11 @@
                 {url: "tips.html?id=6", name: "Andre varer og tjenester"}
             ]},
             {title: "Forbrukerpolitikk", color: "#27334A", icon: "forbrukerpolitikk.png", linkslist: [
-                {url: "forbrukerpolitikk.html?id=1", name: "Bolig"},
-                {url: "forbrukerpolitikk.html?id=2", name: "Finans"},
-                {url: "forbrukerpolitikk.html?id=3", name: "Handel"},
-                {url: "forbrukerpolitikk.html?id=4", name: "Digitalt"},
-                {url: "forbrukerpolitikk.html?id=5", name: "Offentlige tjenester"}
+                {url: "forbrukerpolitikk.html?id=1", name: "Om bolig"},
+                {url: "forbrukerpolitikk.html?id=2", name: "Om finans"},
+                {url: "forbrukerpolitikk.html?id=3", name: "Om handel"},
+                {url: "forbrukerpolitikk.html?id=4", name: "Om digitalt"},
+                {url: "forbrukerpolitikk.html?id=5", name: "Om offentlige tjenester"}
             ]}
         ]
     }
@@ -30,17 +30,17 @@
     const ndpagesListJSON = {
         pageList: [
             {title: "Våre tjenester", color:"#27334A", icon: "tjenester.png", linkslist: [
-                {url: "flytterettighetskalkulator", name: "Flytterettighetskalkulator"},
-                {url: "merkeoversikten", name: "Merkeoversikten"},
-                {url: "henvendelsesstatistikk", name: "Henvendelsesstatistikk"},
-                {url: "kommunetesten", name: "Kommunetesten"}
+                {url: "none", name: "Flytterettighetskalkulator"},
+                {url: "none", name: "Merkeoversikten"},
+                {url: "none", name: "Henvendelsesstatistikk"},
+                {url: "none", name: "Kommunetesten"}
             ]},
             {title: "Dette er oss", color: "#27334A", icon: "oss.png", linkslist: [
-                {url: "om-oss.html", name: "Om oss"},
-                {url: "kontakt-oss.html", name: "Kontakt oss"},
-                {url: "jobb-hos-oss.html", name: "Jobb hos oss"},
-                {url: "presse.html", name: "Presse"},
-                {url: "horingssvar.html", name: "Høringssvar"}
+                {url: "none", name: "Om oss"},
+                {url: "none", name: "Kontakt oss"},
+                {url: "none", name: "Jobb hos oss"},
+                {url: "none", name: "Presse"},
+                {url: "none", name: "Høringssvar"}
             ]},
             {title: "Våre nettsteder", color: "#27334A", icon: "nettsider.png", linkslist: [
                 {url: "http://www.hvakostertannlegen.no/", name: "Hva koster tannlegen?"},
@@ -83,7 +83,10 @@
                 var url = links.url;
                 if(url.includes("http")) {
                     addHtml += `<a href="${url}" target="_blank"><li>${name}</li></a>`;
-                } else {
+                } else if (url == "none") {
+                    addHtml += `<li class="disabled">${name}</li>`;
+                }
+                else {
                     addHtml += `<a href="${url}"><li>${name}</li></a>`;
                 }
             })
@@ -111,7 +114,7 @@
                 </article>
             `;
         })
-        addHtml += `</div><div class="morelink">Se flere saker</div></div>`;
+        addHtml += `</div><a href="nyheter.html"><div class="morelink">Se flere saker</div></a></div>`;
         maincont.append(addHtml);
     }
 

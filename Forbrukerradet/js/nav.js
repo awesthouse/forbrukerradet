@@ -17,19 +17,29 @@
     var  mn = $("nav");
     mns = "main-nav-scrolled";
     hdr = $('nav').height();
+    function blueClass() {
+        $("nav").addClass(mns);
+        $(".logo-nav").addClass("new-nav-logo");
+        $(".linewrap span").addClass("new-color");
+        $(".search").addClass("new-search");
+    }
+    function whiteClass() {
+        $("nav").removeClass(mns);
+        $(".logo-nav").removeClass("new-nav-logo");
+        $(".linewrap span").removeClass("new-color");
+        $(".search").removeClass("new-search");
+    }
 
-    if(window.location.href.includes("index")) {
+    if(window.location.href.includes("nyhet") == false) {
+        var searchdiv = $(".searchcont");
+        console.log(searchdiv);
         $(window).scroll(function() {
-            if( $(this).scrollTop() > hdr ) {
-                $("nav").addClass(mns);
-                $(".logo-nav").addClass("new-nav-logo");
-                $(".linewrap span").addClass("new-color");
-                $(".search").addClass("new-search");
+            if( $(this).scrollTop() > hdr) {
+                blueClass();
+            } else if($(".searchcont").is(":visible")) {
+                whiteClass();
             } else {
-                $("nav").removeClass(mns);
-                $(".logo-nav").removeClass("new-nav-logo");
-                $(".linewrap span").removeClass("new-color");
-                $(".search").removeClass("new-search");
+                whiteClass();
             }
         });
     } else {
@@ -66,17 +76,17 @@
             {title: "Nyheter", url: "nyheter.html", linkslist: false},
             {title: "Undersøkelser", url: "undersøkelser.html", linkslist: false},
             {title: "Våre tjenester", color:"#27334A", icon: "tjenester.png", linkslist: [
-                {url: "flytterettighetskalkulator", name: "Flytterettighetskalkulator"},
-                {url: "merkeoversikten", name: "Merkeoversikten"},
-                {url: "henvendelsesstatistikk", name: "Henvendelsesstatistikk"},
-                {url: "kommunetesten", name: "Kommunetesten"}
+                {url: "none", name: "Flytterettighetskalkulator"},
+                {url: "none", name: "Merkeoversikten"},
+                {url: "none", name: "Henvendelsesstatistikk"},
+                {url: "none", name: "Kommunetesten"}
             ]},
             {title: "Dette er oss", color: "#27334A", icon: "oss.png", linkslist: [
-                {url: "om-oss.html", name: "Om oss"},
-                {url: "kontakt-oss.html", name: "Kontakt oss"},
-                {url: "jobb-hos-oss.html", name: "Jobb hos oss"},
-                {url: "presse.html", name: "Presse"},
-                {url: "horingssvar.html", name: "Høringssvar"}
+                {url: "none", name: "Om oss"},
+                {url: "none", name: "Kontakt oss"},
+                {url: "none", name: "Jobb hos oss"},
+                {url: "none", name: "Presse"},
+                {url: "none", name: "Høringssvar"}
             ]},
             {title: "Våre nettsteder", color: "#27334A", icon: "nettsider.png", linkslist: [
                 {url: "http://www.hvakostertannlegen.no/", name: "Hva koster tannlegen?"},
@@ -101,6 +111,8 @@
                     var url = links.url;
                     if(url.includes("http")) {
                         addHtml += `<a href="${url}" target="_blank"><li>${name}</li></a>`;
+                    } else if (url == "none") {
+                        addHtml += `<li class="disabled">${name}</li>`;
                     } else {
                         addHtml += `<a href="${url}.html"><li>${name}</li></a>`;
                     }
@@ -146,25 +158,112 @@
 
         var firstHtml = `
             <div class="chatopen">
-                <div class="question">?</div>
-                <div class="questtext">Har du spørsmål?</div>
-                <div class="questcont">
-                    Chat med oss!
-                    <div class="button-dark">Start chat</div>
+                <div class="question"></div>
+                <div class="questtext">Live chat er åpen</div>
+            </div>
+            <div class="chatcont" id="true">
+                <div class="chattop">
+                    <p>Hjelpesenter</p>
+                    <div class="arrow"></div>
                 </div>
+                <div class="chats">
+                    <div class="them">
+                        <div class="timestamp"> 09:10</div>
+                        Hei! Hva kan vi hjelpe deg med i dag?</div>
+                </div>
+                <div class="inputchat"><textarea></textarea></div>
             </div>
         `;
         $("footer").prepend(firstHtml);
 
         $(".chatopen").on("mouseover", function(){
-            $(".chatopen").animate({width:"250px"});
-            $(".chatopen").animate({height: "300px"});
+            $(".questtext").html("Åpne chat");
         })
         $(".chatopen").on("mouseleave", function(){
-            $(".chatopen").animate({height: "70px"});
-            $(".chatopen").animate({width:"70px"});
+            $(".questtext").html("Live chat er åpen");
         })
+
+        $(".chatopen").on("click", function() {
+            $(this).fadeOut();
+            $(".chatcont").show();
+            $(".them").show();
+        })
+
+        $(".chattop").on("click", function() {
+            console.log($(".chatcont").attr("id"));
+            if($(".chatcont").attr("id") == "true") {
+                $(".chatcont").animate({
+                    bottom: "-350px"
+                })
+                $(".chatcont").attr("id", "false");
+                $(".arrow").css({"transform": "rotate(180deg)"})
+            } else if($(".chatcont").attr("id") == "false") {
+                $(".chatcont").animate({
+                    bottom: "0px"
+                })
+                $(".chatcont").attr("id", "true");
+                $(".arrow").css({"transform": "rotate(0deg)"})
+            }
+        })
+        $('.chatcont textarea').keypress(function (e) {
+            if (e.which == 13) {
+            alert("Denne funksjonen er ikke en del av prototypen");
+              return false;    //<---- Add this line
+            }
+          });
     }
 
+
+    var searchHtml = `
+        <div class="searchcont">
+            <div class="searchbar">
+                <div class="closesearch"></div>
+                <div class="searchinput">
+                    <div class="searchicon"></div>
+                    <input type="text" placeholder="Søk her..."/>
+                    <div class="searchbutton">SØK</div>
+                </div>
+            </div>
+            <div class="categories">
+                <h2>Hva vil du søke i?</h2>
+                <ul class="choices">
+                    <li>Hele siden</li>
+                    <li>Tips og råd</li>
+                    <li>Nyhetssaker</li>
+                    <li>Tester, guider og undersøkelser</li>
+                    <li>Ansatte</li>
+                </ul>
+            </div>
+        </div>
+    `;
+
+    $("nav").append(searchHtml);
+
+    $(".choices li").on("click", function(){
+        $(this).toggleClass("lichosen");
+    })
+    $(".searchbutton").on("click", function() {
+        alert("Denne funksjonen er ikke en del av prototypen");
+    })
+    
+    $('.searchinput input').keypress(function (e) {
+        if (e.which == 13) {
+        alert("Denne funksjonen er ikke en del av prototypen");
+          return false;    //<---- Add this line
+        }
+      });
+
+    $(".search").on("click", function() {
+        $(".searchcont").fadeToggle();
+        $(".shownav").fadeToggle();
+        whiteClass();
+        $("html").toggleClass("no-scroll");
+    })
+    $(".closesearch").on("click", function() {
+        $(".searchcont").fadeToggle();
+        $(".shownav").fadeToggle();
+        $("html").toggleClass("no-scroll");
+        blueClass();
+    })
 
 })();

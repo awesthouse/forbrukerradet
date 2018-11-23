@@ -322,7 +322,7 @@
         var jsonPlacement = parseInt(thisID) - 1;
         var thisSite = vihjelperJSON.siteList[jsonPlacement];
 
-        var imgsrc = "./img/icons/vihjelper.png";
+        var imgsrc = "./img/icons/blue/vihjelper.png";
         var title = thisSite.title;
         var description = thisSite.description;
         var category = thisSite.category;

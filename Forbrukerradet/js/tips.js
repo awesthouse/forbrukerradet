@@ -7,6 +7,7 @@
                 title: "Bil",
                 description: "Kjøp, reparasjon og leie av bil volder forbrukere mye bry. Her finner du dine rettigheter og hvordan du går frem for å klage hvis noe er galt.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "bil.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -45,6 +46,7 @@
                 title: "Bolig",
                 description: "Skal du pusse opp, leier du en leilighet, eller kanskje du akkurat har kjøpt drømmeboligen? Her kan du få gode tips og råd uansett boligsituasjon.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "bolig-tips.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -93,6 +95,7 @@
                 title: "Økonomi og betaling",
                 description: "Sjekk hva du bør tenke på når du skal velge bank eller forsikring. Du finner også informasjon om inkasso, kredittkjøp, netthandel, konkurs og svindel.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "økonomi-og-betaling.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -141,6 +144,7 @@
                 title: "Digitale tjenester",
                 description: "Her kan du lese mer om hva du bør tenke på før du inngår en avtale, og hvordan du klager hvis du ikke er fornøyd med tjenesten.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "digitalt.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -169,6 +173,7 @@
                 title: "Reise",
                 description: "Her finner du informasjon om dine rettigheter når du reiser, og hvordan du klager hvis uhellet er ute.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "reise.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -207,6 +212,7 @@
                 title: "Andre varer og tjenester",
                 description: "Her finner du informasjon om utvalgte varer og tjenester. Sjekk hva du bør tenke på før du kjøper noe, og hvordan du går frem hvis noe går galt.",
                 category: "Tips, råd og dine rettigheter",
+                bgsrc: "andre-tema.jpg",
                 pagesList: [
                     {
                         pageID: 1, 
@@ -254,11 +260,14 @@
         var jsonPlacement = parseInt(thisID) - 1;
         var thisSite = tipsJSON.siteList[jsonPlacement];
 
-        var imgsrc = "./img/icons/tips.png";
+        var bgsrc = thisSite.bgsrc;
+        var bgfullsrc = "./img/bgs/" + bgsrc;
+        var imgsrc = "./img/icons/blue/tips.png";
         var title = thisSite.title;
         var description = thisSite.description;
         var category = thisSite.category;
 
+        $(".site-top-bg").css({"background-image": "url(" + bgfullsrc + ")"});
         $(".site-img").css({"background-image": "url(" + imgsrc + ")"});
         $(".title").html(title);
         $(".description").html(description);
