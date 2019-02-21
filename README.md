@@ -1,3 +1,3 @@
 # Forbrukerradet redesign 2018
 
-En rask prototype, programmert i hovedsaklig Javascript, for faget Interaksjonsdesign 3 under Bachelorutdanning ved Westerdals Oslo ACT.
+A quick prototype, programmed mainly in Javascript, for a school project in Interaction Design 3 at Westerdals Oslo ACT.
